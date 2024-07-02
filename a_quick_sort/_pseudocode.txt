@@ -1,0 +1,15 @@
+quick_sort(nums, low, high)
+    1. if low is less than high:
+        1. partition the input list using partition()
+        2. quick_sort() on the left side of the partition
+        3. quick_sort() on the right side of the partition
+
+partition(nums, low, high)
+    1. set pivot to the element at index high
+    2. set i to low
+    3. for each index(j) from low to high:
+        1. if the element at index j is less than the pivot:
+            1. swap the element at index i with the element at index j
+            2. increment i by 1
+    4. swap the element at index i with the element at index high
+    5. return the index i
